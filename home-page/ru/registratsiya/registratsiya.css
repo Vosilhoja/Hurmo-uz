@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+}
+
+* img {
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: #e4ff9a;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+header .logo span {
+  position: relative;
+  top: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #9d8a0b;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+header .nav-bar {
+  display: flex;
+}
+
+header .nav-menu {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-bar .nav-menu li a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  color: #0b1e5b;
+}
+
+.nav-bar .nav-menu li a:hover {
+  color: #7a5d13;
+}
+
+.nav-bar .nav-menu li:hover {
+  transform: scale(1.05);
+}
+
+header .container .btn-menu {
+  display: flex;
+  gap: 0px;
+}
+
+header .container .btn-menu .royxatdan-otish-nav {
+  background-color: transparent;
+  border: 3px solid #7a5d13;
+  font-size: 16px;
+  padding: 16px 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-right: 35px;
+  transition: 0.3s ease;
+  position: relative;
+  color: #0b1e5b;
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.1),
+    15px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+header .container .btn-menu .royxatdan-otish-nav:hover {
+  background-color: #7a5d13;
+  cursor: pointer;
+  transform: scale(1.07);
+  box-shadow: 17px 20px 15px rgba(0, 0, 0, 0.15),
+    15px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+header .container .btn-menu .kirish-nav {
+  padding: 16px 35px;
+  border-radius: 40px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 3px solid #7a5d13;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  position: relative;
+  color: #fd8a62;
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.1),
+    15px 5px 15px rgba(0, 0, 0, 0.08);
+  margin-right: 30px;
+  color: #0b1e5b;
+}
+
+header .container .btn-menu .kirish-nav:hover {
+  background-color: #7a5d13;
+  cursor: pointer;
+  transform: scale(1.07);
+  color: #ffffff;
+  box-shadow: 17px 20px 15px rgba(0, 0, 0, 0.15),
+    15px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container .btn-menu .language img {
+  position: relative;
+  top: 0px;
+  width: 40px;
+  cursor: pointer;
+}
+
+header .container .btn-menu .language {
+  display: flex;
+  color: #0b1e5b;
+  cursor: default;
+}
+
+header .container .btn-menu .language .language-text {
+  position: relative;
+  top: 20px;
+  height: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+header .container .btn-menu .language .language-text:hover {
+  color: #7a5d13;
+}
+
+.royxatdan-otish .logo .google-logo {
+  width: 50px;
+  cursor: pointer;
+  border: 1px solid #0b1e5b;
+  border-radius: 10px;
+}
+
+.royxatdan-otish .logo .yandex-logo {
+  width: 45px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.royxatdan-otish {
+  background-color: #ffffff;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  margin-top: 50px;
+  height: 700px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px #949494, 1px 1px 20px #949494, 1px 1px 10px #949494;
+  transition: 0.5s ease;
+  margin-bottom: 100px;
+}
+
+.royxatdan-otish:hover {
+  transform: scale(0.98);
+  box-shadow: 1px 1px 15px #9d8a0b, 1px 1px 20px #9d8a0b, 1px 1px 10px #9d8a0b,
+    inset 1px 1px 5px #9d8a0b, inset 1px 1px 5px #9d8a0b,
+    inset 1px 1px 5px #9d8a0b;
+}
+
+.royxatdan-otish h1 {
+  position: relative;
+  top: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 30px;
+  width: 300px;
+  margin-left: 33%;
+  text-align: start;
+}
+
+form {
+  margin-top: 50px;
+  width: 200px;
+  text-align: start;
+  margin-left: 33%;
+}
+
+form .email p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+form .password p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+form .email input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  width: 370px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
+form .password input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  width: 370px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
+form .email input:focus {
+  border: 3px solid #9d8a0b;
+  outline: none;
+}
+
+form .password input:focus {
+  border: 3px solid #9d8a0b;
+  outline: none;
+}
+
+form .submit {
+  padding-top: 10px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 370px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 3px solid #9d8a0b;
+  transition: 0.5s ease;
+}
+
+form .submit:hover {
+  background-color: #9d8a0b;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.yoki {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.yoki .line-bg {
+  background-color: #000000;
+  height: 2px;
+  width: 360px;
+  position: relative;
+  top: 12px;
+  left: 375px;
+  z-index: 2;
+}
+
+.yoki div {
+  z-index: 3;
+  width: 200px;
+  background-color: #ffffff;
+  position: relative;
+  left: 460px;
+}
+
+.yoki div span {
+  z-index: 4;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.royxat{
+margin-top: 30px;
+}
+
+.royxat p{
+margin-bottom: 10px;
+font-weight: 700;
+letter-spacing: 1px;
+}
+
+.royxat a{
+    color: #9d8a0b;
+}
+
+
+footer .left-btns .logotip img{
+width: 50px;
+}
+
+footer{
+display: flex;
+justify-content: space-around;
+background-color: #e4ff9a;
+padding-top: 20px;
+line-height: 50px;
+gap: 200px;
+}
+
+footer .left-btns .logotip span{
+position: relative;
+bottom: 20px;
+left: 5px;
+font-weight: 700;
+color: #0b1e5b;
+}
+
+footer .left-btns ul li{
+color: #0b1e5b;
+font-weight: 600;
+transition: all 0.5s ease;
+}
+
+footer .right-btns li a{
+color: #0b1e5b;
+font-weight: 700;
+transition: all 0.3s ease;
+}
+
+footer .right-btns li:hover{
+color: #9d8a0b;
+transform: scale(1.07);
+}
+
+footer .right-btns li a:hover{
+color: #9d8a0b;
+}
+
+.line{
+background-color: #9d8a0b;
+height: 3px;
+width: 1250px;
+position: relative;
+left: 300px;
+}
+
+.ll{
+background-color: #e4ff9a;
+padding-top: 30px;
+padding-bottom: 80px;
+}
+
+.llc{
+position: relative;
+left: 300px;
+display: inline;
+top: 40px;
+}

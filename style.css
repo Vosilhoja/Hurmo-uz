@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4b0202, #029719);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 120px;
+  background: linear-gradient(270deg, #9d8a0b, #0ff, #9d8a0b);
+  background-size: 600% 600%;
+  border-radius: 0 0 60px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: neon 3s ease infinite alternate,
+    gradientMove 2s ease infinite alternate;
+  transition: 1s ease;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 120px;
+  background: linear-gradient(270deg, #9d8a0b, #0ff, #9d8a0b);
+  background-size: 600% 600%;
+  border-radius: 0 0 60px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: neon 3s ease infinite alternate,
+    gradientMove 2s ease infinite alternate;
+  transition: 1s ease;
+}
+
+.header-logo:hover {
+  animation: neon 1s ease infinite alternate,
+    gradientMove 1s ease infinite alternate;
+  left: 50%;
+  width: 300px;
+  border-radius: 0 0 20px 20px;
+}
+
+.header-logo img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 20px 15px #0ff, 0 0 20px 15px #0ff;
+  }
+  100% {
+    box-shadow: 0 0 30px 20px #ffdd00, 0 0 30px 20px #ffdd00;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.language {
+  display: flex;
+  gap: 60px;
+  margin-top: 300px;
+}
+
+.language .ru,
+.language .uzb {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.language .ru {
+  background: linear-gradient(270deg, #c31432, #240b36);
+  animation: ru-neon 1s ease infinite alternate,
+    ru-gradientMove 1s ease infinite alternate;
+}
+
+.language .uzb {
+  background: linear-gradient(270deg, #56ab2f, #a8e063);
+  animation: uzb-neon 1s ease infinite alternate,
+    uzb-gradientMove 1s ease infinite alternate;
+}
+
+@keyframes ru-neon {
+  0% {
+    box-shadow: 0 0 20px 5px #c31432, 0 0 20px 5px #c31432;
+  }
+  100% {
+    box-shadow: 0 0 30px 10px #240b36, 0 0 30px 20px #240b36;
+  }
+}
+
+@keyframes ru-gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes uzb-neon {
+  0% {
+    box-shadow: 0 0 20px 5px #56ab2f, 0 0 20px 5px #56ab2f;
+  }
+  100% {
+    box-shadow: 0 0 30px 10px #a8e063, 0 0 30px 10px #a8e063;
+  }
+}
+
+@keyframes uzb-gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.language .ru:hover {
+  animation: ru-neon 0.5s ease infinite alternate,
+    ru-gradientMove 0.5s ease infinite alternate;
+}
+
+.language .uzb:hover {
+  animation: uzb-neon 0.5s ease infinite alternate,
+    uzb-gradientMove 0.5s ease infinite alternate;
+}
+
+@media (max-width: 800px) {
+  .language {
+    flex-direction: column;
+  }
+  
+}
