@@ -835,6 +835,7 @@ footer .container .connection ul li:hover {
   }
   
   .container-bg .section-one .container-one .three{
+  height: auto;
   font-size: 10px;
   position: relative;
   top: 20%;
