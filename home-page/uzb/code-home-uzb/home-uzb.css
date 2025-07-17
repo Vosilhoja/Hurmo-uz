@@ -967,12 +967,7 @@ footer .container .connection ul li:hover {
   .section-three .sections .two-section .btns,
   .section-three .sections .three-section .btns,
   .section-three .sections .four-section .btns {
-    position: relative;
-    top: -10px;
-    flex-wrap: wrap;
-    width: 250px;
-    height: 200px;
-    left: 100px;
+    display: none;
   }
 
   .section-three .sections .one-section .text .question,
@@ -986,11 +981,36 @@ footer .container .connection ul li:hover {
   .section-three .sections .two-section .btns a button,
   .section-three .sections .three-section .btns a button,
   .section-three .sections .four-section .btns a button {
-    width: 5px;
-    height: 5px;
+    display: none;
+  }
+
+  .section-three .sections .btns-nq,
+  .section-three .sections .btns-nq,
+  .section-three .sections .btns-nq,
+  .section-three .sections .btns-nq {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .section-three .sections .btns-nq button,
+  .section-three .sections .btns-nq button,
+  .section-three .sections .btns-nq button,
+  .section-three .sections .btns-nq button {
+    border: 3px solid #000000;
+    background-color: #7a5d13;
+    padding: 15px 15px;
+    border-radius: 50%;
+  }
+
+  .section-three .sections .btns-nq a button,
+  .section-three .sections .btns-nq a button,
+  .section-three .sections .btns-nq a button,
+  .section-three .sections .btns-nq a button {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 10px;
   }
 
   .section-three .sections .one-section .image img,
@@ -1111,7 +1131,7 @@ header .menu-content {
   display: flex;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header .container .menu-icon {
     display: none;
   }
@@ -1124,6 +1144,10 @@ header .menu-content {
     top: auto;
     left: auto;
     justify-content: space-evenly;
+  }
+
+  .section-three .sections .btns-nq {
+    display: none;
   }
 }
 
@@ -1285,7 +1309,7 @@ header .menu-content {
   .section-two .container .images .one {
     width: 70%;
     display: flex;
-    height: auto;
+    height: 300px;
   }
 
   .section-two .container .images .decoration {
@@ -1302,6 +1326,7 @@ header .menu-content {
   }
 
   .section-two .container .texts {
+    padding: 20px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -1341,41 +1366,53 @@ header .menu-content {
     bottom: -20px;
   }
 
-  .section-three .sections .one-section .text .btns {
-    position: absolute;
-    bottom: 320px;
-    display: flex;
-    gap: 28px;
-    left: -15px;
-  }
-  .section-three .sections .two-section .text .btns {
-    position: absolute;
-    bottom: 400px;
-    display: flex;
-    gap: 28px;
-    left: -15px;
+    .section-three .sections .one-section .btns,
+  .section-three .sections .two-section .btns,
+  .section-three .sections .three-section .btns,
+  .section-three .sections .four-section .btns {
+    display: none;
   }
 
-  .section-three .sections .three-section .text .btns {
-    position: absolute;
-    bottom: 385px;
-    display: flex;
-    gap: 28px;
-    left: -15px;
+  .section-three .sections .one-section .text .question,
+  .section-three .sections .two-section .text .question,
+  .section-three .sections .three-section .text .question,
+  .section-three .sections .four-section .text .question {
+    display: none;
   }
 
-  .section-three .sections .four-section .text .btns {
-    position: absolute;
-    bottom: 300px;
-    display: flex;
-    gap: 28px;
-    left: -15px;
+  .section-three .sections .one-section .btns a button,
+  .section-three .sections .two-section .btns a button,
+  .section-three .sections .three-section .btns a button,
+  .section-three .sections .four-section .btns a button {
+    display: none;
   }
 
-  .section-three .sections .one-section .text .btns a button,
-  .section-three .sections .two-section .text .btns a button,
-  .section-three .sections .three-section .text .btns a button,
-  .section-three .sections .four-section .text .btns a button {
+  .section-three .sections .btns-nq,
+  .section-three .sections .btns-nq,
+  .section-three .sections .btns-nq,
+  .section-three .sections .btns-nq {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .section-three .sections .btns-nq button,
+  .section-three .sections .btns-nq button,
+  .section-three .sections .btns-nq button,
+  .section-three .sections .btns-nq button {
+    border: 3px solid #000000;
+    background-color: #7a5d13;
+    padding: 15px 15px;
+    border-radius: 50%;
+  }
+
+  .section-three .sections .btns-nq a button,
+  .section-three .sections .btns-nq a button,
+  .section-three .sections .btns-nq a button,
+  .section-three .sections .btns-nq a button {
+    color: #ffffff;
+    font-weight: 700;
     font-size: 10px;
   }
 
@@ -1442,8 +1479,8 @@ header .menu-content {
   }
 
   .logotip {
-  position: relative;
-  top: 110px;
+    position: relative;
+    top: 110px;
     left: 35%;
   }
 }

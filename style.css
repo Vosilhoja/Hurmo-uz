@@ -169,7 +169,7 @@ body {
     uzb-gradientMove 0.5s ease infinite alternate;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 200px) {
   .language {
     flex-direction: column;
     gap: 30px;
