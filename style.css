@@ -172,6 +172,7 @@ body {
 @media (max-width: 800px) {
   .language {
     flex-direction: column;
+    gap: 30px;
   }
   
 }

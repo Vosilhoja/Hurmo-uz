@@ -15,7 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  width: 100%;
+}
+
 header .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,9 +28,17 @@ header .container {
   background-color: #e4ff9a;
 }
 
-
 header .logo img {
   width: 50px;
+}
+
+header .logo {
+  width: 200px;
+  margin-left: 100px;
+}
+
+header .menu-content {
+  width: 100%;
 }
 
 header .logo span {
@@ -160,7 +173,7 @@ header .container .btn-menu .language .language-text:hover {
   left: 10%;
   width: 76%;
   height: 650px;
-  
+
   padding-top: 70px;
   padding-bottom: 100px;
   border-radius: 60px 60px 0px 0px;
@@ -179,8 +192,8 @@ header .container .btn-menu .language .language-text:hover {
   border-top-right-radius: 100% 100%;
 }
 
-.container-bg .section-one .container-section-one{
-margin-left: 5%;
+.container-bg .section-one .container-section-one {
+  margin-left: 5%;
 }
 
 .container-bg .section-one .container-section-one .title {
@@ -202,7 +215,6 @@ margin-left: 5%;
 }
 
 .container-bg .section-one .container-section-one .btn {
-  
   border: 3px solid #7a5d13;
   font-size: 16px;
   padding: 16px 40px;
@@ -331,6 +343,7 @@ margin-left: 5%;
 
 .section-two .container {
   display: flex;
+  justify-content: center;
 }
 
 .section-two .container .images .one {
@@ -342,8 +355,8 @@ margin-left: 5%;
 
 .section-two {
   position: relative;
-  left: 300px;
-  width: 1200px;
+
+  width: 100%;
 }
 
 .section-two .container .texts .container-one .image img,
@@ -524,7 +537,10 @@ margin-left: 5%;
 }
 
 .section-four {
-  margin-left: 230px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .section-four h1 {
@@ -540,11 +556,10 @@ margin-left: 5%;
 }
 
 .section-four .icons {
-  width: 1220px;
   flex-wrap: wrap;
   display: flex;
   gap: 100px;
-  margin-left: 100px;
+  justify-content: center;
 }
 
 .section-five {
@@ -742,6 +757,7 @@ footer .container .social-connection ul li a {
 
 footer .container .social-connection ul .social {
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -767,11 +783,19 @@ footer .container .connection ul li:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 420px) and (max-width: 768px) {
   header .container {
     gap: 20px;
     text-align: center;
+  }
+
+  header .logo {
+    margin-left: 0;
+  }
+
+  footer .container .social-connection ul .social {
+    display: flex;
+    justify-content: center;
   }
 
   header .nav-bar,
@@ -789,23 +813,23 @@ footer .container .connection ul li:hover {
     margin-bottom: 10px;
   }
 
-  header .container .btn-menu .language .language-text{
-  height: 20px;
+  header .container .btn-menu .language .language-text {
+    height: 20px;
   }
 
-  header .container .btn-menu .language{
-  width: 100%;
+  header .container .btn-menu .language {
+    width: 100%;
   }
 
   header .container .btn-menu .royxatdan-otish-nav,
-  header .container .btn-menu .kirish-nav{
-  margin-right: 0;
+  header .container .btn-menu .kirish-nav {
+    margin-right: 0;
   }
 
-  header .btn-menu a{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  header .btn-menu a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .container-bg .section-one .image #one-decoration,
@@ -825,30 +849,30 @@ footer .container .connection ul li:hover {
     width: 70%;
   }
 
-  .container-bg .section-one .image .container-one .one{
-  font-size: 15px;
+  .container-bg .section-one .image .container-one .one {
+    font-size: 15px;
   }
 
-  .container-bg .section-one .image .container-one .two{
-  font-size: 12px;
-  width: 50%;
-  }
-  
-  .container-bg .section-one .container-one .three{
-  height: auto;
-  font-size: 10px;
-  position: relative;
-  top: 20%;
+  .container-bg .section-one .image .container-one .two {
+    font-size: 12px;
+    width: 50%;
   }
 
-  .container-bg .section-one .container-two p span{
-  font-size: 12px;
+  .container-bg .section-one .container-one .three {
+    height: auto;
+    font-size: 10px;
+    position: relative;
+    top: 20%;
   }
 
-  .container-bg .section-one .image{
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
+  .container-bg .section-one .container-two p span {
+    font-size: 12px;
+  }
+
+  .container-bg .section-one .image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
   }
 
   .container-bg .section-one .image .container-two {
@@ -865,7 +889,6 @@ footer .container .connection ul li:hover {
 
   .container-bg {
     height: 1400px;
-
   }
 
   header .btn-menu .language {
@@ -897,7 +920,7 @@ footer .container .connection ul li:hover {
   }
 
   .section-two .container .images .one {
-    width: 250px;
+    width: 80%;
   }
 
   .section-two .container .images .decoration {
@@ -909,9 +932,9 @@ footer .container .connection ul li:hover {
     width: 100%;
   }
 
-  .section-two{
-  left: 0;
-  margin-top: 300px;
+  .section-two {
+    left: 0;
+    margin-top: 300px;
   }
 
   .container-bg .section-one .container-section-one a {
@@ -956,7 +979,7 @@ footer .container .connection ul li:hover {
   .section-three .sections .two-section .text .question,
   .section-three .sections .three-section .text .question,
   .section-three .sections .four-section .text .question {
-  display: none;
+    display: none;
   }
 
   .section-three .sections .one-section .btns a button,
@@ -1009,26 +1032,26 @@ footer .container .connection ul li:hover {
     margin-top: 20px;
   }
 
-  .section-four{
-  margin-left: 0;
-  text-align: center;
+  .section-four {
+    margin-left: 0;
+    text-align: center;
   }
 
-  .section-four h1{
-  font-size: 25px;
+  .section-four h1 {
+    font-size: 25px;
   }
 
-  .section-four p{
-  font-size: 17px;
+  .section-four p {
+    font-size: 17px;
   }
 
-  .section-four .icons{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  margin-left: 0;
-  justify-content: center;
+  .section-four .icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .section-six .image img {
@@ -1038,23 +1061,23 @@ footer .container .connection ul li:hover {
     margin-top: 20px;
   }
 
-  .section-five{
-  display: none;
+  .section-five {
+    display: none;
   }
 
-  .section-six .text h1{
-  text-align: center;
-  font-size: 25px;
+  .section-six .text h1 {
+    text-align: center;
+    font-size: 25px;
   }
 
-  .section-six .text p{
-  text-align: center;
-  font-size: 15px;
+  .section-six .text p {
+    text-align: center;
+    font-size: 15px;
   }
 
-  .section-six .text button{
-  position: relative;
-  left: 35%;
+  .section-six .text a {
+    display: flex;
+    justify-content: center;
   }
 
   footer .container {
@@ -1071,29 +1094,6 @@ footer .container .connection ul li:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header .menu-content {
   display: none;
   flex-direction: column;
@@ -1102,18 +1102,14 @@ header .menu-content {
   background: #e4ff9a;
   padding: 10px 20px;
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 0;
   z-index: 10;
 }
 
-#menu-toggle:checked ~ .container-bg {
-  padding-top: 350px;
-}
 #menu-toggle:checked ~ .menu-content {
   display: flex;
 }
-
 
 @media (min-width: 768px) {
   header .container .menu-icon {
@@ -1121,16 +1117,16 @@ header .menu-content {
   }
   header .menu-content {
     display: flex !important;
-    flex-direction: row; /* Горизонтальное расположение */
+    flex-direction: row;
     align-items: center;
     gap: 20px;
     position: static;
     top: auto;
     left: auto;
+    justify-content: space-evenly;
   }
 }
 
-/* Стили для гамбургер меню */
 .menu-icon {
   display: flex;
   flex-direction: column;
@@ -1164,4 +1160,287 @@ header .menu-content {
 
 .menu-icon span {
   transition: all 0.5s ease;
+}
+
+@media (min-width: 300px) and (max-width: 420px) {
+  header .logo {
+    margin-left: 0;
+  }
+
+  header .menu-content .nav-bar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  header .nav-bar {
+    display: inline;
+  }
+
+  header .container .btn-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  header .container .btn-menu a {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .container .btn-menu .language {
+    width: auto;
+  }
+
+  header .container .btn-menu .royxatdan-otish-nav {
+    margin-right: 0;
+  }
+
+  header .container .btn-menu .kirish-nav {
+    margin-right: 0;
+  }
+
+  .container-bg .section-one .container-section-one .title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container-bg .section-one {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+  }
+
+  .container-bg .section-one .container-section-one .title-section-one {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .container-bg .section-one .image #one-decoration {
+    display: none;
+  }
+
+  .container-bg .section-one .image #two-decoration {
+    display: none;
+  }
+
+  .container-bg .section-one .container-section-one .woosh {
+    display: none;
+  }
+
+  .container-bg .section-one .container-section-one .vaqt {
+    display: none;
+  }
+
+  .container-bg .section-one .container-section-one {
+    margin-left: 0%;
+  }
+
+  .container-bg .section-one .container-section-one a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-bg {
+    height: 1100px;
+  }
+
+  .container-bg .section-one .image #three-decoration {
+    width: 90%;
+  }
+
+  .container-bg .section-one .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .container-bg .section-one .container-one {
+    width: 90%;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .container-bg .section-one .container-two {
+    left: 0;
+    bottom: 50px;
+  }
+
+  .section-two .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-two .container .images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-two .container .images .one {
+    width: 70%;
+    display: flex;
+  }
+
+  .section-two .container .images .decoration {
+    display: none;
+  }
+
+  .section-two .container .texts .title {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .section-two .container .texts .tit {
+    font-size: 20px;
+  }
+
+  .section-two .container .texts {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-three .sections {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-three .sections .one-section,
+  .section-three .sections .two-section,
+  .section-three .sections .three-section,
+  .section-three .sections .four-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px;
+  }
+
+  .section-three .sections .one-section .image,
+  .section-three .sections .two-section .image,
+  .section-three .sections .three-section .image,
+  .section-three .sections .four-section .image {
+    display: flex;
+    align-items: end;
+  }
+
+  .section-three .sections .one-section .image img,
+  .section-three .sections .two-section .image img,
+  .section-three .sections .three-section .image img,
+  .section-three .sections .four-section .image img {
+    width: 100%;
+    position: relative;
+    align-items: end;
+    left: 0;
+    bottom: -20px;
+  }
+
+  .section-three .sections .one-section .text .btns {
+    position: absolute;
+    bottom: 320px;
+    display: flex;
+    gap: 28px;
+    left: -15px;
+  }
+  .section-three .sections .two-section .text .btns {
+    position: absolute;
+    bottom: 400px;
+    display: flex;
+    gap: 28px;
+    left: -15px;
+  }
+
+  .section-three .sections .three-section .text .btns {
+    position: absolute;
+    bottom: 385px;
+    display: flex;
+    gap: 28px;
+    left: -15px;
+  }
+
+  .section-three .sections .four-section .text .btns {
+    position: absolute;
+    bottom: 300px;
+    display: flex;
+    gap: 28px;
+    left: -15px;
+  }
+
+  .section-three .sections .one-section .text .btns a button,
+  .section-three .sections .two-section .text .btns a button,
+  .section-three .sections .three-section .text .btns a button,
+  .section-three .sections .four-section .text .btns a button {
+    font-size: 10px;
+  }
+
+  .section-three .sections .two-section .text .woosh {
+    display: none;
+  }
+
+  .section-three .sections .one-section,
+  .section-three .sections .two-section,
+  .section-three .sections .three-section,
+  .section-three .sections .four-section {
+    width: 90%;
+    left: 5%;
+  }
+
+  .section-five {
+    display: none;
+  }
+
+  .section-six {
+    width: 90%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .section-six .text h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .section-six .text p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .section-six .text a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .section-six .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-six .image img {
+    left: 0;
+    width: 90%;
+    bottom: 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    left: 0;
+    width: auto;
+    top: 100px;
+    text-align: center;
+  }
+
+  .logotip {
+  position: relative;
+  top: 110px;
+    left: 35%;
+  }
 }
