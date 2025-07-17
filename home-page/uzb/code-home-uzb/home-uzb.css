@@ -1263,6 +1263,7 @@ header .menu-content {
     width: 90%;
     position: relative;
     bottom: 80px;
+    height: 180px;
   }
 
   .container-bg .section-one .container-two {
@@ -1284,6 +1285,7 @@ header .menu-content {
   .section-two .container .images .one {
     width: 70%;
     display: flex;
+    height: auto;
   }
 
   .section-two .container .images .decoration {
@@ -1428,6 +1430,7 @@ header .menu-content {
     left: 0;
     width: 90%;
     bottom: 0;
+    height: auto;
   }
 
   footer .container {
