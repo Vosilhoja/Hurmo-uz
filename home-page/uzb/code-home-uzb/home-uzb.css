@@ -787,10 +787,12 @@ footer .container .connection ul li:hover {
   header .container {
     gap: 20px;
     text-align: center;
+    z-index: 10;
   }
 
   header .logo {
     margin-left: 0;
+    z-index: 10;
   }
 
   footer .container .social-connection ul .social {
@@ -1122,7 +1124,7 @@ header .menu-content {
   background: #e4ff9a;
   padding: 10px 20px;
   position: absolute;
-  top: 8%;
+  top: 80px;
   left: 0;
   z-index: 10;
 }
@@ -1156,7 +1158,7 @@ header .menu-content {
   flex-direction: column;
   justify-content: center;
   gap: 4px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .menu-icon span {
